@@ -44,7 +44,7 @@ public class Logger {
         try {
             FileOutputStream outputStream = new FileOutputStream(logFile, true);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
-            outputStreamWriter.append(String.format("[%s] : %s;", new Date().toString(), data));
+            outputStreamWriter.append(String.format("[%s] : %s;\n", new Date().toString(), data));
             outputStreamWriter.close();
             outputStream.close();
         } catch (IOException e) {
